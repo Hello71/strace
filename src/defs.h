@@ -511,11 +511,7 @@ extern int Tflag_scale;
 extern int Tflag_width;
 extern bool iflag;
 extern bool count_wallclock;
-extern unsigned int pid_decoding;
-enum pid_decoding_flags {
-	PID_DECODING_NS_TRANSLATION = 1 << 0,
-	PID_DECODING_COMM	    = 1 << 1,
-};
+
 /* are we filtering traces based on paths? */
 extern struct path_set {
 	const char **paths_selected;
